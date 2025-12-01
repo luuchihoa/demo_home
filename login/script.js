@@ -29,6 +29,8 @@ window.login = async function () {
       
       // Ẩn modal login
       toggleModal(false);
+      // Cập nhật tabbar thành thông tin cá nhân
+      updateLoginTab(result.fullname);
     } else {
       message.textContent = 'Sai tài khoản hoặc mật khẩu ❌';
     }
