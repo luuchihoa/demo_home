@@ -99,8 +99,8 @@ document.addEventListener('keydown', (e)=>{
 (function(){
   const saved = localStorage.getItem('demo-theme') || '';
   if(saved) setTheme(saved);
-})();
   const savedName = localStorage.getItem('fullname');
   if(savedName){
     updateLoginTab(savedName);
   }
+})();
