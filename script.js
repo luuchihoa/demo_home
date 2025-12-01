@@ -22,11 +22,6 @@ function toggleModal(show){
   }
 }
 
-function fakeLogin(){
-  alert('Fake login (demo).');
-  toggleModal(false);
-}
-
 function setTheme(cls){
   document.body.className = cls || '';
   localStorage.setItem('demo-theme', cls || '');
