@@ -6,7 +6,7 @@ window.login = async function () {
   const password = document.getElementById('password').value.trim();
   const message = document.getElementById('message');
   if (!username || !password) {
-    message.textContent = 'Vui lòng nhập đầy đủ thông tin.';
+    message.textContent = 'Vui lòng nhập đầy đủ thông tin!';
     return;
   }
 
