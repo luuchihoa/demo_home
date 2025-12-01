@@ -27,7 +27,7 @@ window.login = async function () {
 
       message.textContent = 'Đăng nhập thành công ✔';
 
-      document.getElementById('modal').setAttribute('aria-hidden','true');
+      document.getElementById('modal').setAttribute('aria-hidden','false');
     } else {
       message.textContent = 'Sai tài khoản hoặc mật khẩu ❌';
     }
