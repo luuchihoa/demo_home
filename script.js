@@ -22,6 +22,31 @@ function toggleModal(show){
     m.setAttribute('aria-hidden','true');
   }
 }
+function toggleUserModal(show){
+  const m = document.getElementById('modal-user');
+
+  if(show){
+    m.classList.add('show');
+    m.removeAttribute('inert');
+    m.setAttribute('aria-hidden','false');
+
+    // Hiển thị thông tin người dùng
+    const fullname = localStorage.getItem('fullname') || 'Người dùng';
+    const username = localStorage.getItem('username') || '';
+    document.getElementById('user-fullname').textContent = `Họ và tên: ${fullname}`;
+    document.getElementById('user-username').textContent = `Tên đăng nhập: ${username}`;
+
+    // focus an toàn
+    setTimeout(()=>document.querySelector('#modal-user .btn')?.focus(), 80);
+  } else {
+    // Blur focus trước khi ẩn
+    document.activeElement.blur();
+
+    m.classList.remove('show');
+    m.setAttribute('inert','');
+    m.setAttribute('aria-hidden','true');
+  }
+}
 
 function setTheme(cls){
   document.body.className = cls || '';
