@@ -336,6 +336,8 @@ body.theme-purple .tabbar {
 
 /* Text header */
 .header-text {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
   font-size: clamp(24px, 8vw, 72px); /* responsive lớn/nhỏ */
   margin: 0;
   font-weight: 700;
