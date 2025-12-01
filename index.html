@@ -151,7 +151,7 @@
       <button class="tab-item" data-target="contact" onclick="switchTab(event)">
         <span class="icon">📞</span><span class="label">Liên hệ</span>
       </button>
-      <button onclick="sendToSheet('admin', 'good')">Ghi dữ liệu</button>
+      <button onclick="sendToSheet(localStorage.getItem('username'), 'good')">Ghi dữ liệu</button>
     </nav>
 
     <!-- LINK JS -->
