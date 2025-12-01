@@ -28,7 +28,7 @@ window.login = async function () {
       message.textContent = 'Đăng nhập thành công ✔';
 
       setTimeout(() => {
-        window.location.href = '../index.html';
+        window.location.href = './index.html';
       }, 700);
     } else {
       message.textContent = 'Sai tài khoản hoặc mật khẩu ❌';
