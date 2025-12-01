@@ -1,3 +1,4 @@
+conso.log('TEXT');
 const API_URL =
   'https://script.google.com/macros/s/AKfycbzv6DuxOE5-UZQQNFOtmoknErnmJBqqHLl3fhH_x9x6sOAphju6OUnmczYPy0iElxIwXw/exec'; // Dán URL Apps Script vào đây
 
