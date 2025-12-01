@@ -329,7 +329,7 @@ body.theme-purple .tabbar {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 90px;
   flex-shrink: 0;
   transition: transform 0.3s;
 }
