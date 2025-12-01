@@ -1,5 +1,6 @@
 
 window.login = async function () {
+  const API_URL ='https://script.google.com/macros/s/AKfycbzm_Hs__uPiFxcrm5LsnoIia1lE6BsdFfe_V1MGvxOWEXLJIZ4GFY23wqnPl8P244o/exec'; // Dán URL Apps Script vào đây
   const username = document.getElementById('username').value.trim();
   const password = document.getElementById('password').value.trim();
   const message = document.getElementById('message');
@@ -9,7 +10,6 @@ window.login = async function () {
   }
 
   message.textContent = 'Đang kiểm tra...';
-  const API_URL ='https://script.google.com/macros/s/AKfycbzm_Hs__uPiFxcrm5LsnoIia1lE6BsdFfe_V1MGvxOWEXLJIZ4GFY23wqnPl8P244o/exec'; // Dán URL Apps Script vào đây
   try {
     const response = await fetch(API_URL, {
       method: 'POST',
