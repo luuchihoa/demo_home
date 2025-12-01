@@ -100,9 +100,7 @@ document.addEventListener('keydown', (e)=>{
   const saved = localStorage.getItem('demo-theme') || '';
   if(saved) setTheme(saved);
 })();
-(function(){
   const savedName = localStorage.getItem('fullname');
   if(savedName){
     updateLoginTab(savedName);
   }
-})();
