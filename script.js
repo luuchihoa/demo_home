@@ -15,7 +15,7 @@ function toggleModal(show){
   if(show){
     m.classList.add('show');
     m.setAttribute('aria-hidden','false');
-    setTimeout(()=>document.getElementById('u').focus(), 80);
+    setTimeout(()=>document.getElementById('username').focus(), 80);
   } else {
     m.classList.remove('show');
     m.setAttribute('aria-hidden','true');
