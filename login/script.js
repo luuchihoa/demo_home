@@ -23,7 +23,7 @@ window.login = async function () {
     if (result.success) {
       // lưu tên đầy đủ lại
       localStorage.setItem('fullname', result.fullname);
-      localStorage.setItem('username', result.username);
+      localStorage.setItem('username', username);
 
       message.textContent = 'Đăng nhập thành công ✔';
       setTimeout(() => {
