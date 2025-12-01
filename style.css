@@ -327,8 +327,8 @@ body.theme-purple .tabbar {
 
 /* Logo lớn, responsive */
 .header-logo {
-  width: 180px;
-  height: 180px;
+  width: clamp(80px, 10vw, 200px);
+  height: auto;
   object-fit: cover;
   border-radius: 90px;
   flex-shrink: 0;
