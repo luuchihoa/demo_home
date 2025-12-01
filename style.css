@@ -46,6 +46,7 @@
 }
 html,
 body {
+  min-height: clamp(100vh, 80vh, 1200px);
   height: 100%;
   margin: 0;
   font-family: Inter, system-ui, Arial;
