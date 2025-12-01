@@ -26,9 +26,10 @@ window.login = async function () {
       localStorage.setItem('username', result.username);
 
       message.textContent = 'Đăng nhập thành công ✔';
-      
-      // Ẩn modal login
-      toggleModal(false);
+      setTimeout(() => {
+        // Ẩn modal login
+        toggleModal(false);
+      }, 700);
       // Cập nhật tabbar thành thông tin cá nhân
       updateLoginTab(result.fullname);
     } else {
