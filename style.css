@@ -315,6 +315,7 @@ body.theme-purple .tabbar {
 .main-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   padding: 20px 24px;
   width: 100%;
