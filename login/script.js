@@ -1,5 +1,5 @@
 const API_URL =
-  'https://script.google.com/macros/s/AKfycbzv6DuxOE5-UZQQNFOtmoknErnmJBqqHLl3fhH_x9x6sOAphju6OUnmczYPy0iElxIwXw/exec'; // Dán URL Apps Script vào đây
+  'https://script.google.com/macros/s/AKfycbwmKyDqdHqe6iz9vpMM_2-ExPK5KMwGeAmJSYxcPlvifnkskWFWIOsWiYRKT6UAIH8/exec'; // Dán URL Apps Script vào đây
 
 window.login = async function () {
   const username = document.getElementById('username').value.trim();
