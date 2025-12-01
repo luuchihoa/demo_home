@@ -46,3 +46,13 @@ window.updateLoginTab = function(fullname) {
     tabLogin.onclick = () => toggleUserModal(true); // mở modal user
   }
 }
+windown.logout = function(){
+  localStorage.removeItem('fullname');
+  localStorage.removeItem('username');
+  const tabLogin = document.getElementById("tab-login");
+  if(tabLogin){
+    tabLogin.innerHTML = `<span class="icon">🔐</span><span class="label">Login</span>`;
+    tabLogin.onclick = () => toggleModal(true);
+  }
+  toggleUserModal(false); // ẩn modal user nếu đang mở
+}
