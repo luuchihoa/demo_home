@@ -43,6 +43,6 @@ window.updateLoginTab = function(fullname) {
   const tabLogin = document.getElementById("tab-login");
   if(tabLogin){
     tabLogin.innerHTML = `<span class="icon">👤</span><span class="label">${fullname}</span>`;
-    tabLogin.onclick = null; // bỏ sự kiện toggleModal
+    tabLogin.onclick = () => toggleUserModal(true); // mở modal user
   }
 }
