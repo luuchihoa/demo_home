@@ -17,6 +17,7 @@ function toggleModal(show){
     m.setAttribute('aria-hidden','false');
     setTimeout(()=>document.getElementById('username').focus(), 80);
   } else {
+    document.activeElement.blur();
     m.classList.remove('show');
     m.setAttribute('aria-hidden','true');
   }
